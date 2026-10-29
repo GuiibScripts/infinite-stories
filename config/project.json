@@ -1,0 +1,69 @@
+{
+  "project_name": "Infinite Stories",
+  "schema_version": "1.0.0",
+  "repository_mode": "DECLARATIVE_VIDEO_PATTERN_ONLY",
+  "store_raw_videos_in_git": false,
+  "video_pattern_standard": {
+    "aspect_ratio": "9:16",
+    "width_px": 1080,
+    "height_px": 1920,
+    "target_duration_sec": 60.0,
+    "min_duration_sec": 58.0,
+    "max_duration_sec": 62.0,
+    "fps_standard": 30,
+    "fps_allowed": [24, 30, 60],
+    "pixel_format": "yuv420p",
+    "video_codec": "h264",
+    "video_container": ".mp4",
+    "audio_codec": "aac",
+    "audio_sample_rate_hz": 48000,
+    "audio_channels": 2,
+    "target_loudness_lufs": -14.0,
+    "true_peak_max_dbtp": -1.0
+  },
+  "narrative_structure": {
+    "language": "pt-BR",
+    "words_per_minute_target": 140,
+    "min_words_total": 115,
+    "max_words_total": 160,
+    "macro_blocks_count": 6,
+    "macro_block_ids": [
+      "B1_00_10",
+      "B2_10_20",
+      "B3_20_30",
+      "B4_30_40",
+      "B5_40_50",
+      "B6_50_60"
+    ]
+  },
+  "zoom_and_continuity": {
+    "allowed_techniques": [
+      "TECH_A_DIGITAL",
+      "TECH_B_GENERATIVE",
+      "TECH_C_HYBRID"
+    ],
+    "allowed_loop_strategies": [
+      "PORTAL_FRAME_MATCH",
+      "OPTICAL_SURFACE_MATCH",
+      "MICRO_TO_MACRO_TEXTURE_MATCH",
+      "CAMERA_PULLBACK_RESET"
+    ],
+    "max_digital_zoom_without_generative_reanchor": 2.2,
+    "require_entry_and_exit_keyframes": true,
+    "forbid_generic_crossfade_on_loop": true
+  },
+  "subtitles_standard": {
+    "format": [".srt", ".ass"],
+    "burn_in_post_production": true,
+    "max_chars_per_line": 28,
+    "max_lines_per_block": 2,
+    "safe_margin_bottom_px": 320,
+    "safe_margin_top_px": 220,
+    "safe_margin_sides_px": 90
+  },
+  "qa_policy": {
+    "allowed_statuses": ["PASS", "REVIEW", "FAIL"],
+    "default_initial_status": "REVIEW",
+    "require_human_visual_loop_verification": true
+  }
+}

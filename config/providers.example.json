@@ -1,0 +1,47 @@
+{
+  "_comment": "Copie este arquivo para config/providers.json localmente se desejar usar integrações via API. NUNCA envie chaves reais para o GitHub.",
+  "video_generation": {
+    "primary_workflow": "google_flow_ui_manual_or_vertex_veo",
+    "google_flow": {
+      "execution_mode": "MANUAL_UI_EXPORT",
+      "notes": "O Google Flow deve ser operado via interface oficial exportando os clipes para assets/generated/ conforme o manifesto da história."
+    },
+    "vertex_ai_veo": {
+      "enabled": false,
+      "project_id": "YOUR_GCP_PROJECT_ID",
+      "location": "us-central1",
+      "model_id": "veo-2.0-generate-001",
+      "supports_image_to_video": true,
+      "supports_first_and_last_frame": true,
+      "typical_clip_durations_sec": [5, 8],
+      "env_var_credentials": "GOOGLE_APPLICATION_CREDENTIALS"
+    }
+  },
+  "image_keyframes": {
+    "provider": "google_imagen_or_flow_frames",
+    "resolution_target": "2160x3840",
+    "aspect_ratio": "9:16",
+    "notes": "Gerar quadros-âncora (F_000 e keyframes intermediários) em dobro da resolução final (4K vertical) quando usar TECH_A_DIGITAL ou TECH_C_HYBRID."
+  },
+  "voice_synthesis_ptbr": {
+    "selected_provider": "CONFIGURABLE_BEFORE_PRODUCTION",
+    "options": {
+      "google_cloud_tts": {
+        "voice_name": "pt-BR-Neural2-B",
+        "speaking_rate": 1.0,
+        "pitch": -1.5
+      },
+      "elevenlabs": {
+        "model_id": "eleven_multilingual_v2",
+        "stability": 0.65,
+        "similarity_boost": 0.80,
+        "style": 0.20
+      }
+    }
+  },
+  "post_production": {
+    "ffmpeg_binary": "ffmpeg",
+    "ffprobe_binary": "ffprobe",
+    "subtitle_renderer": "libass"
+  }
+}

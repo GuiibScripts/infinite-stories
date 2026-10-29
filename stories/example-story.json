@@ -1,0 +1,421 @@
+{
+  "schema_version": "1.0.0",
+  "story_id": "INF-001",
+  "slug": "example-story",
+  "title": "Os Três Segundos de Arthur Vaz",
+  "qa_status": "REVIEW",
+  "qa_notes": "Blueprint documental completo e validado. Aguarda geração local dos clipes no Google Flow/Veo e renderização final via FFmpeg para inspeção visual humana do loop.",
+  "author_lock": {
+    "original_author_premise": "Arthur Vaz, um relojoeiro aposentado de 74 anos, foi encontrado imóvel em sua oficina às 03h14 da madrugada após um incêndio que nunca chegou a queimar sua bancada. Todos os relógios da parede derreteram no calor, mas o cronógrafo de bolso aberto na mão dele parou exatamente às 03h11 — três segundos antes do curto-circuito começar dentro da caixa de força refletida na própria lente da lupa dele.",
+    "immutable_facts": [
+      "O protagonista é Arthur Vaz, relojoeiro de 74 anos em sua oficina tradicional.",
+      "O incêndio atingiu o teto da oficina às 03h14, mas a bancada central permaneceu intacta.",
+      "O cronógrafo de bolso de latão sobre a bancada travou às 03h11min00s.",
+      "A causa real está gravada no micro-reflexo da lente da lupa: o próprio Arthur desligou o disjuntor principal três minutos antes para travar o cofre eletromagnético e proteger a escritura dentro da engrenagem.",
+      "O vídeo termina atravessando a fotografia emoldurada dentro do mecanismo aberto do relógio, que mostra a oficina inteira exatamente como no primeiro frame."
+    ],
+    "author_approved_adaptation": true
+  },
+  "video_pattern_expectation": {
+    "final_output_local_path": "output/example-story_final.mp4",
+    "aspect_ratio": "9:16",
+    "width_px": 1080,
+    "height_px": 1920,
+    "fps": 30,
+    "target_duration_sec": 60.0,
+    "duration_tolerance_sec": 1.5,
+    "video_codec": "h264",
+    "pixel_format": "yuv420p",
+    "audio_codec": "aac",
+    "audio_sample_rate_hz": 48000,
+    "subtitles_burned_in": true
+  },
+  "visual_bible": {
+    "era_and_setting": "Oficina de relojoaria antiga no centro histórico de São Paulo, ano de 2026, madrugada chuvosa logo após o rescaldo de um princípio de incêndio no teto.",
+    "color_palette_hex": [
+      "#1A1612",
+      "#C88A3B",
+      "#4A5D6E",
+      "#8C3B2B",
+      "#E6D5B8"
+    ],
+    "lighting_setup": "Luz fria azulada de luar e poste externo entrando pela janela alta à esquerda (5600K) contrastando com uma única luminária articulada de bancada com filamento de tungstênio quente (2700K) acesa sobre a madeira.",
+    "lens_profile": "Início em lente equivalente 28mm f/4.0 transicionando continuamente pelo eixo Z até lente macro 100mm f/8.0 com profundidade de campo controlada e grão cinematográfico 35mm fino.",
+    "immutable_anchors": [
+      "Bancada de madeira maciça escura com marcas de ferramentas e cinzas leves nas bordas.",
+      "Luminária metálica verde-escura articulada acesa no canto superior direito da bancada.",
+      "Mão direita envelhecida de Arthur Vaz (com aliança de ouro gasta no anelar e manga de camisa de flanela xadrez cinza-escura) repousando imóvel ao lado de uma lupa de relojoeiro.",
+      "Cronógrafo de bolso de latão envelhecido aberto no centro exato da bancada, com ponteiros travados em 03:11.",
+      "Micro-compartimento sob o volante de balanço do relógio contendo um microfilme/fotografia em miniatura da própria oficina."
+    ]
+  },
+  "loop_specification": {
+    "anchor_frame_f000_path": "assets/references/example-story_F000_master_4k.png",
+    "anchor_frame_description": "Plano aberto vertical (9:16) da oficina de relojoaria vista de frente: no topo, vigas de madeira chamuscadas pela fumaça; no centro, a bancada iluminada pela luminária quente; sobre a bancada, a mão imóvel de Arthur ao lado da lupa e do cronógrafo aberto no eixo central.",
+    "loop_strategy": "PORTAL_FRAME_MATCH",
+    "return_trajectory_explanation": "No bloco B6_50_60 (SEG_09 e SEG_10), o zoom extremo entra na cavidade central sob a engrenagem de escape do cronógrafo, onde há um visor de safira guardando uma microfotografia de prata da própria oficina. A câmera atravessa as bordas da microfotografia até que ela preencha 100% do quadro 1080x1920, coincidindo pixel a pixel com o quadro inicial F_000 na mesma velocidade linear de avanço.",
+    "audio_loop_bridge": "O som de chuva suave na janela e o zumbido grave de 60Hz da luminária têm crossfade de potência constante nos últimos 1.5s, enquanto a última frase ('...exatamente onde tudo começou às três e onze.') termina em 59.4s conectando com a abertura ('Às três e quatorze da madrugada...')."
+  },
+  "macro_blocks": [
+    {
+      "block_id": "B1_00_10",
+      "time_start_sec": 0.0,
+      "time_end_sec": 10.0,
+      "narrative_goal": "Gancho imediato apresentando a anomalia física da oficina queimada no teto, mas intacta na bancada.",
+      "narration_ptbr": "Às três e quatorze da madrugada, o fogo derreteu todos os relógios nas paredes desta oficina. [pausa 0.4s] Menos o que estava aberto na bancada de Arthur Vaz.",
+      "word_count": 26,
+      "estimated_speech_sec": 9.2,
+      "visual_discovery": "A câmera parte do plano geral da oficina esfumaçada (F_000) e avança suavemente pelo eixo Z em direção à bancada iluminada no centro."
+    },
+    {
+      "block_id": "B2_10_20",
+      "time_start_sec": 10.0,
+      "time_end_sec": 20.0,
+      "narrative_goal": "Primeiro avanço visual revelando a mão imóvel do relojoeiro e a ausência de fuligem sobre o centro da mesa.",
+      "narration_ptbr": "Quando os peritos entraram, acharam que o velho relojoeiro tinha sido surpreendido pela fumaça. [pausa 0.4s] Mas repare no círculo limpo sobre a madeira.",
+      "word_count": 23,
+      "estimated_speech_sec": 8.8,
+      "visual_discovery": "O enquadramento fecha no tampo da bancada, mostrando a mão imóvel de Arthur com a aliança gasta, a lupa de metal e um halo circular sem cinzas ao redor do cronógrafo."
+    },
+    {
+      "block_id": "B3_20_30",
+      "time_start_sec": 20.0,
+      "time_end_sec": 30.0,
+      "narrative_goal": "Aprofundamento mostrando a diferença de três minutos no mostrador do cronógrafo de bolso.",
+      "narration_ptbr": "O curto-circuito no teto começou às três e quatorze. [pausa 0.3s] Só que o cronógrafo de latão sob a lupa dele foi travado manualmente às três e onze.",
+      "word_count": 26,
+      "estimated_speech_sec": 9.4,
+      "visual_discovery": "O zoom entra em close-up fechado sobre o mostrador de esmalte rachado do cronógrafo e a lente lateral da lupa de bancada."
+    },
+    {
+      "block_id": "B4_30_40",
+      "time_start_sec": 30.0,
+      "time_end_sec": 40.0,
+      "narrative_goal": "Desenvolvimento das pistas: o pino de parada acionado de propósito e o reflexo na borda da lente.",
+      "narration_ptbr": "Três minutos antes da primeira faísca, Arthur já tinha puxado a trava da coroa. [pausa 0.4s] Ele não tentou fugir; ele estava esperando o calor ativar o selo térmico.",
+      "word_count": 27,
+      "estimated_speech_sec": 9.5,
+      "visual_discovery": "A câmera passa rente à coroa dentada puxada para fora e mergulha para dentro da abertura do mostrador, onde as engrenagens douradas estão expostas."
+    },
+    {
+      "block_id": "B5_40_50",
+      "time_start_sec": 40.0,
+      "time_end_sec": 50.0,
+      "narrative_goal": "Revelação principal no interior do mecanismo: a trava eletromagnética que protegia a cápsula de safira.",
+      "narration_ptbr": "O calor que destruiu a oficina fundiu a trava de chumbo interna, [pausa 0.3s] selando para sempre o cofre microscópico que ele escondeu debaixo do eixo central.",
+      "word_count": 26,
+      "estimated_speech_sec": 9.3,
+      "visual_discovery": "Macro extremo entre os dentes de latão da roda de escape, revelando a gota de metal solidificada que trancou uma lente de safira no coração do relógio."
+    },
+    {
+      "block_id": "B6_50_60",
+      "time_start_sec": 50.0,
+      "time_end_sec": 60.0,
+      "narrative_goal": "Desfecho autoral e ponte visual/narrativa que reconstrói o quadro inicial F_000 para o loop infinito.",
+      "narration_ptbr": "E dentro daquele vidro blindado ficou guardada a única prova daquela noite... [pausa 0.4s] exatamente onde tudo começou, três minutos antes.",
+      "word_count": 20,
+      "estimated_speech_sec": 8.5,
+      "visual_discovery": "O zoom atravessa a lente de safira no centro do eixo, revelando a fotografia em miniatura da oficina que se expande até recompor perfeitamente o quadro F_000."
+    }
+  ],
+  "segments": [
+    {
+      "segment_id": "SEG_01",
+      "macro_block_id": "B1_00_10",
+      "time_start_sec": 0.0,
+      "time_end_sec": 5.0,
+      "duration_sec": 5.0,
+      "zoom_technique": "TECH_B_GENERATIVE",
+      "camera_position": "Eixo central da porta da oficina, altura de 1.55m, apontando ligeiramente para baixo (tilt -8 graus) em direção ao centro da bancada.",
+      "focal_point": "Centro da bancada iluminada pela luminária de tungstênio.",
+      "framing_scale": "Wide Shot (Plano Geral Vertical)",
+      "desired_movement": "Avanço contínuo e estável no eixo Z (dolly-in linear) atravessando a névoa fina de fumaça residual.",
+      "spatial_lock": {
+        "parent_segment_id": null,
+        "target_roi_norm": [0.5, 0.54, 0.55, 0.55],
+        "scale_factor": 1.8,
+        "focal_length_mm": 28
+      },
+      "frame_in_ref": "assets/references/example-story_F000_master_4k.png",
+      "frame_out_ref": "assets/references/example-story_F005_workbench_mid.png",
+      "expected_clip_path": "assets/generated/example-story_SEG_01.mp4",
+      "generation_prompt": "[ASPECT & FORMAT]: Vertical 9:16 (1080x1920), photorealistic live-action cinema footage, shot on ARRI Alexa Mini LF, 28mm prime lens, 5 seconds, 30fps. [CONTINUITY ANCHOR]: Seamless spatial continuation starting strictly from the provided input reference frame (example-story_F000_master_4k.png). Maintain exact perspective lines, charred ceiling beams at top, and dark wooden watchmaker workbench at center. [SCENE & ENVIRONMENT]: Old traditional watchmaker workshop at night after minor ceiling smoke damage; melted wall clocks hanging in background shadow; central wooden workbench untouched by fire. [IMMUTABLE SUBJECTS]: Elderly watchmaker's right hand in dark grey plaid flannel sleeve resting motionless on the desk beside a brass pocket watch and a green articulated desk lamp glowing warm 2700K. [SUBTLE PHYSICAL ACTION]: Very faint lingering smoke particles drifting slowly in the cold 5600K moonlight beam from left window; everything on the desk remains completely still. [CAMERA Z-AXIS TRAJECTORY]: Continuous, ultra-stable motion-control dolly-in along the Z-axis at constant linear velocity, advancing from full workshop wide view directly toward the illuminated center of the workbench at [0.50, 0.54]. [OPTICAL FOCUS & LIGHTING]: Deep f/4.0 focus locked on the brass pocket watch on the desk; high-contrast chiaroscuro lighting combining cool window light from left and warm tungsten desk lamp from upper right. [TARGET EXIT FRAME]: By the final second, framing matches target exit reference (example-story_F005_workbench_mid.png), framing the workbench top, the motionless hand, lamp, and pocket watch. [NEGATIVE CONSTRAINTS]: No camera cuts, no transitions, no sudden speed ramps, no hand movement, no morphing objects, no geometry warping, no on-screen text, no 3D CGI look.",
+      "continuity_risks": [
+        "Risco de o modelo movimentar os dedos da mão imóvel de Arthur.",
+        "Risco de a fumaça alterar o contraste global no último segundo."
+      ],
+      "approval_criteria": [
+        "A mão de Arthur permanece 100% estática durante os 5 segundos.",
+        "O quadro final em 5.0s alinha geometricamente com example-story_F005_workbench_mid.png."
+      ]
+    },
+    {
+      "segment_id": "SEG_02",
+      "macro_block_id": "B1_00_10",
+      "time_start_sec": 5.0,
+      "time_end_sec": 10.0,
+      "duration_sec": 5.0,
+      "zoom_technique": "TECH_C_HYBRID",
+      "camera_position": "A 1.10m da superfície da bancada, avançando no eixo Z rumo ao conjunto mão + lupa + relógio.",
+      "focal_point": "Aro metálico da lupa e o cronógrafo de bolso aberto ao lado dos dedos de Arthur.",
+      "framing_scale": "Medium Shot para Medium Close-Up",
+      "desired_movement": "Zoom híbrido combinando alinhamento óptico de entrada com avanço contínuo sobre o tampo da mesa.",
+      "spatial_lock": {
+        "parent_segment_id": "SEG_01",
+        "target_roi_norm": [0.5, 0.56, 0.52, 0.52],
+        "scale_factor": 1.9,
+        "focal_length_mm": 35
+      },
+      "frame_in_ref": "assets/references/example-story_F005_workbench_mid.png",
+      "frame_out_ref": "assets/references/example-story_F010_desk_circle.png",
+      "expected_clip_path": "assets/generated/example-story_SEG_02.mp4",
+      "generation_prompt": "[ASPECT & FORMAT]: Vertical 9:16 (1080x1920), photorealistic live-action cinema footage, shot on ARRI Alexa Mini LF, 35mm prime lens, 5 seconds, 30fps. [CONTINUITY ANCHOR]: Seamless spatial continuation starting strictly from the last frame of SEG_01 (example-story_F005_workbench_mid.png). Preserve wood grain texture, lighting angle, and object placement. [SCENE & ENVIRONMENT]: Top surface of the dark oak watchmaker workbench illuminated by warm 2700K tungsten lamp from upper right; fine grey ash dusting the outer edges of the desk, leaving a clean circular zone in the center. [IMMUTABLE SUBJECTS]: Elderly right hand with worn gold wedding band on ring finger resting motionless on the left; brass magnifying loupe and open antique brass pocket watch in the clean center circle. [SUBTLE PHYSICAL ACTION]: Microscopic dust motes glinting in the warm lamp light; zero movement from the hand or tools. [CAMERA Z-AXIS TRAJECTORY]: Continuous smooth forward dolly-in along Z-axis at constant linear speed toward the clean circular wood area framing the hand, loupe, and open pocket watch. [OPTICAL FOCUS & LIGHTING]: Tack-sharp focus on the wood grain, brass watch case, and knuckles of the hand; warm specular highlights on brass. [TARGET EXIT FRAME]: Matches target exit reference (example-story_F010_desk_circle.png), showing the clean circle on the desk with the hand on the left edge and the pocket watch centered. [NEGATIVE CONSTRAINTS]: No camera cuts, no dissolve transitions, no finger twitching, no warping wood lines, no floating artifacts, no text overlays.",
+      "continuity_risks": [
+        "Variação na textura dos veios da madeira entre SEG_01 e SEG_02."
+      ],
+      "approval_criteria": [
+        "Transição imperceptível em 05.0s usando o último frame real de SEG_01 como âncora.",
+        "O halo circular sem fuligem ao redor do relógio está claramente visível."
+      ]
+    },
+    {
+      "segment_id": "SEG_03",
+      "macro_block_id": "B2_10_20",
+      "time_start_sec": 10.0,
+      "time_end_sec": 20.0,
+      "duration_sec": 10.0,
+      "zoom_technique": "TECH_C_HYBRID",
+      "camera_position": "De 0.65m a 0.30m acima da bancada, convergindo entre a mão com aliança, a lupa e o mostrador do relógio.",
+      "focal_point": "Mostrador de esmalte branco rachado do cronógrafo e aro da lupa logo ao lado.",
+      "framing_scale": "Close-Up (Plano Fechado na Bancada)",
+      "desired_movement": "2 segundos iniciais de TECH_A_DIGITAL sobre keyframe 4K seguidos de 8 segundos de TECH_B_GENERATIVE contínuos no eixo Z.",
+      "spatial_lock": {
+        "parent_segment_id": "SEG_02",
+        "target_roi_norm": [0.52, 0.52, 0.45, 0.45],
+        "scale_factor": 2.2,
+        "focal_length_mm": 50
+      },
+      "frame_in_ref": "assets/references/example-story_F010_desk_circle.png",
+      "frame_out_ref": "assets/references/example-story_F020_watch_and_loupe.png",
+      "expected_clip_path": "assets/generated/example-story_SEG_03.mp4",
+      "generation_prompt": "[ASPECT & FORMAT]: Vertical 9:16 (1080x1920), photorealistic live-action cinema footage, shot on ARRI Alexa Mini LF, 50mm macro-capable prime lens, 8 seconds generative + 2s hybrid entry, 30fps. [CONTINUITY ANCHOR]: Seamless spatial continuation from example-story_F010_desk_circle.png. Maintain exact geometry of the brass pocket watch, nearby magnifying loupe, and fingertips of the elderly hand on the left margin. [SCENE & ENVIRONMENT]: Close-up view of the clean circular wooden surface surrounded by a faint ring of dark soot particles. [IMMUTABLE SUBJECTS]: Open antique brass pocket chronograph with cracked white enamel dial and dark blued-steel hands frozen at 03:11; brass jeweler's loupe resting beside the watch crown. [SUBTLE PHYSICAL ACTION]: Subtle optical refraction shifting naturally inside the glass lens of the loupe as the camera angle advances along Z-axis; watch hands remain strictly frozen at 03:11. [CAMERA Z-AXIS TRAJECTORY]: Steady linear dolly-in along Z-axis moving past the elderly fingertips on the left and centering directly on the pocket watch dial and adjacent loupe rim. [OPTICAL FOCUS & LIGHTING]: f/5.6 depth of field keeping both the watch dial and the brass loupe rim sharp under 2700K directional tungsten light from upper right. [TARGET EXIT FRAME]: Matches example-story_F020_watch_and_loupe.png, where the open pocket watch and the side of the loupe fill 85% of the vertical frame. [NEGATIVE CONSTRAINTS]: No moving watch hands, no deformed clock numerals, no camera cuts, no morphing brass textures, no CGI look.",
+      "continuity_risks": [
+        "Modelos generativos tendem a animar ponteiros de relógio ou deformar algarismos romanos/arábicos."
+      ],
+      "approval_criteria": [
+        "Os ponteiros do relógio permanecem rigorosamente imóveis em 03:11.",
+        "As marcações do mostrador mantêm geometria fixa (ancoradas por frame_in e frame_out)."
+      ]
+    },
+    {
+      "segment_id": "SEG_04",
+      "macro_block_id": "B3_20_30",
+      "time_start_sec": 20.0,
+      "time_end_sec": 30.0,
+      "duration_sec": 10.0,
+      "zoom_technique": "TECH_C_HYBRID",
+      "camera_position": "De 0.30m a 0.14m do mostrador do cronógrafo.",
+      "focal_point": "Os ponteiros travados em 03:11 e a coroa lateral puxada para fora.",
+      "framing_scale": "Extreme Close-Up (Super Close-Up no Mostrador e Coroa)",
+      "desired_movement": "Avanço contínuo no eixo Z revelando a textura do esmalte rachado e o pino da coroa destravado.",
+      "spatial_lock": {
+        "parent_segment_id": "SEG_03",
+        "target_roi_norm": [0.5, 0.48, 0.48, 0.48],
+        "scale_factor": 2.1,
+        "focal_length_mm": 85
+      },
+      "frame_in_ref": "assets/references/example-story_F020_watch_and_loupe.png",
+      "frame_out_ref": "assets/references/example-story_F030_dial_crown_closeup.png",
+      "expected_clip_path": "assets/generated/example-story_SEG_04.mp4",
+      "generation_prompt": "[ASPECT & FORMAT]: Vertical 9:16 (1080x1920), photorealistic live-action macro cinema footage, 85mm macro lens, 8 seconds generative + 2s hybrid entry, 30fps. [CONTINUITY ANCHOR]: Direct continuation from example-story_F020_watch_and_loupe.png. Preserve exact crack pattern on the white enamel dial and oxidized brass patina. [SCENE & ENVIRONMENT]: Macro view of the antique brass pocket watch resting on dark oak wood. [IMMUTABLE SUBJECTS]: Cracked white enamel dial with blued-steel hands locked at 03:11, central open aperture (skeleton heart) in the middle of the dial showing motionless brass gears underneath, and the ridged brass winding crown at the top clearly pulled out into the stop-lock position. [SUBTLE PHYSICAL ACTION]: Realistic micro-specular glints traveling slowly across the beveled steel hands and brass ridges as the camera moves closer; zero mechanical rotation. [CAMERA Z-AXIS TRAJECTORY]: Continuous linear macro dolly-in along Z-axis framing the pulled-out crown at the upper third and the central open gear aperture at the center of the frame. [OPTICAL FOCUS & LIGHTING]: f/8.0 macro depth of field keeping the enamel surface, pulled crown stem, and upper gear bridge crisp under warm 2700K side-top light. [TARGET EXIT FRAME]: Matches example-story_F030_dial_crown_closeup.png, centering on the open central aperture of the dial with the pulled crown stem visible at the top edge. [NEGATIVE CONSTRAINTS]: No spinning gears, no moving hands, no shifting cracks, no camera cuts, no lens distortion.",
+      "continuity_risks": [
+        "Risco de as engrenagens internas girarem sozinhas se não travadas por first-and-last-frame."
+      ],
+      "approval_criteria": [
+        "Pino da coroa visivelmente puxado para fora e engrenagens totalmente travadas.",
+        "Textura de micro-rachaduras do esmalte idêntica entre entrada e saída."
+      ]
+    },
+    {
+      "segment_id": "SEG_05",
+      "macro_block_id": "B4_30_40",
+      "time_start_sec": 30.0,
+      "time_end_sec": 40.0,
+      "duration_sec": 10.0,
+      "zoom_technique": "TECH_B_GENERATIVE",
+      "camera_position": "De 0.14m a 0.05m (5 centímetros), entrando pela abertura central do mostrador rumo ao mecanismo interno.",
+      "focal_point": "A ponte de latão interna e a trava térmica sob o volante do relógio.",
+      "framing_scale": "Macro Shot (Interior do Mecanismo)",
+      "desired_movement": "Penetração suave no eixo Z atravessando o anel central do mostrador para dentro da câmara de engrenagens.",
+      "spatial_lock": {
+        "parent_segment_id": "SEG_04",
+        "target_roi_norm": [0.5, 0.52, 0.44, 0.44],
+        "scale_factor": 2.3,
+        "focal_length_mm": 100
+      },
+      "frame_in_ref": "assets/references/example-story_F030_dial_crown_closeup.png",
+      "frame_out_ref": "assets/references/example-story_F040_internal_gears_macro.png",
+      "expected_clip_path": "assets/generated/example-story_SEG_05.mp4",
+      "generation_prompt": "[ASPECT & FORMAT]: Vertical 9:16 (1080x1920), photorealistic optical probe macro footage, Laowa 24mm f/14 macro probe lens look, 10 seconds (composed of two 5s anchored Veo clips), 30fps. [CONTINUITY ANCHOR]: Direct continuation from example-story_F030_dial_crown_closeup.png, passing past the white enamel rim into the exposed central mechanical chamber of the pocket watch. [SCENE & ENVIRONMENT]: Cavernous macro interior of an antique brass mechanical pocket watch; brushed brass bridges, ruby jewel bearings, steel screws with micro-scratches, and halted escapement wheel. [IMMUTABLE SUBJECTS]: Stationary brass gear teeth, deep red synthetic ruby bearing in the upper bridge, and a distinct droplet of resolidified silver-grey thermal solder locking the central balance wheel shaft. [SUBTLE PHYSICAL ACTION]: True three-dimensional optical parallax as foreground gear teeth pass smoothly past the outer edges of the frame while the camera pushes deeper into the mechanism. [CAMERA Z-AXIS TRAJECTORY]: Steady linear probe push-in along the Z-axis directly between the stationary brass bridges toward the central shaft locked by the thermal solder seal. [OPTICAL FOCUS & LIGHTING]: Warm golden light filtering from above through the open dial, creating realistic metallic reflections and deep micro-shadows inside the gear chamber; rack focus onto the central solder seal. [TARGET EXIT FRAME]: Matches example-story_F040_internal_gears_macro.png, framing the central balance wheel hub and the melted thermal lead seal locking a tiny circular sapphire window underneath. [NEGATIVE CONSTRAINTS]: No rotating gears, no morphing gear teeth, no floating metal parts, no camera cuts, no 3D cartoon shader.",
+      "continuity_risks": [
+        "Deformação na geometria dos dentes das engrenagens ao saírem pelas bordas do quadro em paralaxe."
+      ],
+      "approval_criteria": [
+        "Paralaxe 3D fisicamente coerente sem dentes de engrenagem derretendo.",
+        "Foco cravado no selo de chumbo solidificado e no visor circular de safira ao fundo."
+      ]
+    },
+    {
+      "segment_id": "SEG_06",
+      "macro_block_id": "B5_40_50",
+      "time_start_sec": 40.0,
+      "time_end_sec": 50.0,
+      "duration_sec": 10.0,
+      "zoom_technique": "TECH_C_HYBRID",
+      "camera_position": "De 50mm a 12mm de distância do eixo central interno do relógio.",
+      "focal_point": "A cápsula circular de safira cravada no centro do eixo, revelando a microfotografia guardada em seu interior.",
+      "framing_scale": "Extreme Macro (Núcleo do Eixo Central)",
+      "desired_movement": "Avanço contínuo em direção à janela circular de safira protegida pelo selo térmico fundido.",
+      "spatial_lock": {
+        "parent_segment_id": "SEG_05",
+        "target_roi_norm": [0.5, 0.5, 0.42, 0.42],
+        "scale_factor": 2.4,
+        "focal_length_mm": 100
+      },
+      "frame_in_ref": "assets/references/example-story_F040_internal_gears_macro.png",
+      "frame_out_ref": "assets/references/example-story_F050_sapphire_capsule_portal.png",
+      "expected_clip_path": "assets/generated/example-story_SEG_06.mp4",
+      "generation_prompt": "[ASPECT & FORMAT]: Vertical 9:16 (1080x1920), photorealistic extreme macro cinema footage, 100mm macro probe lens, 8s generative + 2s hybrid alignment, 30fps. [CONTINUITY ANCHOR]: Seamless continuation from example-story_F040_internal_gears_macro.png. Maintain exact shape of the resolidified silver-grey thermal solder droplet and surrounding brass bezel. [SCENE & ENVIRONMENT]: Extreme macro view of the hidden micro-vault at the center of the watch movement. [IMMUTABLE SUBJECTS]: Matte grey resolidified thermal solder fused against a knurled brass inner ring, framing a crystal-clear circular sapphire lens; visible beneath the sapphire glass is a sharp, high-contrast miniature photograph of the watchmaker's workshop. [SUBTLE PHYSICAL ACTION]: Faint warm light reflection gliding across the curved sapphire surface as the lens approaches along the Z-axis. [CAMERA Z-AXIS TRAJECTORY]: Continuous linear push-in along the Z-axis directly into the circular sapphire lens at the exact center of the frame [0.50, 0.50]. [OPTICAL FOCUS & LIGHTING]: Precision focus shifting from the rough metallic texture of the solder seal directly through the sapphire crystal onto the miniature image enclosed inside. [TARGET EXIT FRAME]: Matches example-story_F050_sapphire_capsule_portal.png, where the circular brass and sapphire bezel surrounds the outer border of the frame and the miniature workshop scene fills the central 70% area. [NEGATIVE CONSTRAINTS]: No camera cuts, no blur on the inner image, no warping metal rim, no text overlays.",
+      "continuity_risks": [
+        "A imagem dentro da cápsula de safira precisa corresponder exatamente à geometria do quadro inicial F_000 para preparar o loop."
+      ],
+      "approval_criteria": [
+        "O interior da lente de safira já exibe nitidamente a composição de F_000 alinhada por máscara.",
+        "O aro metálico da cápsula permanece perfeitamente circular e centrado."
+      ]
+    },
+    {
+      "segment_id": "SEG_07",
+      "macro_block_id": "B6_50_60",
+      "time_start_sec": 50.0,
+      "time_end_sec": 60.0,
+      "duration_sec": 10.0,
+      "zoom_technique": "TECH_C_HYBRID",
+      "camera_position": "Atravessando o plano do cristal de safira até emergir integralmente no enquadramento F_000.",
+      "focal_point": "A bancada central da oficina dentro da imagem revelada (idêntica ao F_000).",
+      "framing_scale": "Extreme Macro Portal transicionando para Wide Shot (F_000)",
+      "desired_movement": "Avanço constante no eixo Z onde o aro de latão e safira sai pelas bordas do quadro 1080x1920 e o interior reconstrói 100% do quadro inicial F_000 na mesma velocidade de entrada do SEG_01.",
+      "spatial_lock": {
+        "parent_segment_id": "SEG_06",
+        "target_roi_norm": [0.5, 0.5, 0.7, 0.7],
+        "scale_factor": 1.4285,
+        "focal_length_mm": 28
+      },
+      "frame_in_ref": "assets/references/example-story_F050_sapphire_capsule_portal.png",
+      "frame_out_ref": "assets/references/example-story_F000_master_4k.png",
+      "expected_clip_path": "assets/generated/example-story_SEG_07_loop_return.mp4",
+      "generation_prompt": "[ASPECT & FORMAT]: Vertical 9:16 (1080x1920), photorealistic live-action cinema footage + optical portal composite, 10 seconds, 30fps. [CONTINUITY ANCHOR]: Starts strictly from example-story_F050_sapphire_capsule_portal.png and terminates strictly on the exact master anchor frame example-story_F000_master_4k.png (First-and-Last-Frame locked + post-production radial mask composite). [SCENE & ENVIRONMENT]: The camera passes through the circular sapphire crystal window inside the watch core, expanding the preserved image of the watchmaker's workshop until the brass bezel exits the outer frame boundaries completely. [IMMUTABLE SUBJECTS]: The emerging workshop view must match F_000 identically: charred ceiling beams at top, melted wall clocks in dark background, central wooden workbench with warm 2700K green lamp, and Arthur's motionless right hand beside the pocket watch. [SUBTLE PHYSICAL ACTION]: As the sapphire rim clears the edges of the frame by second 57.5, the subtle lingering smoke in the moonlit beam matches the exact initial motion state of SEG_01. [CAMERA Z-AXIS TRAJECTORY]: Constant linear Z-axis forward velocity matching the exact entry speed of SEG_01 so that frame 1800 (60.0s) seamlessly hands off to frame 0 (00.0s) without velocity bump. [OPTICAL FOCUS & LIGHTING]: Smooth transition from macro crystal refraction to the full chiaroscuro workshop lighting (5600K left window + 2700K desk lamp). [TARGET EXIT FRAME]: Exact pixel-aligned match to example-story_F000_master_4k.png. [NEGATIVE CONSTRAINTS]: No crossfade ghosts, no flash transition, no velocity pause at the end, no color shift between last frame and F_000.",
+      "continuity_risks": [
+        "Diferença de luminância ou desaceleração nos últimos 15 frames causando percepção do ponto de loop."
+      ],
+      "approval_criteria": [
+        "Último frame (60.0s) apresenta correspondência geométrica e cromática exata com F_000.",
+        "Velocidade de avanço no eixo Z em 59.5s–60.0s é idêntica à velocidade em 00.0s–00.5s.",
+        "Reprodução em loop contínuo aprovada por inspeção visual e auditiva humana sem tranco perceptível."
+      ]
+    }
+  ],
+  "audio_and_subtitles": {
+    "narration_audio_local_path": "assets/audio/example-story_narration_ptbr.wav",
+    "ambience_audio_local_path": "assets/audio/example-story_ambience_loop.wav",
+    "subtitles_local_path": "assets/subtitles/example-story.srt",
+    "total_word_count": 148,
+    "estimated_total_speech_sec": 54.7,
+    "voice_profile": {
+      "language": "pt-BR",
+      "timbre": "Masculino grave, maduro, contido e investigativo",
+      "speaking_rate": 1.0,
+      "target_lufs": -14.0
+    },
+    "subtitle_blocks": [
+      {
+        "index": 1,
+        "start": "00:00:00,250",
+        "end": "00:00:03,100",
+        "text": "Às três e quatorze\nda madrugada,"
+      },
+      {
+        "index": 2,
+        "start": "00:00:03,150",
+        "end": "00:00:06,400",
+        "text": "o fogo derreteu todos os\nrelógios desta oficina."
+      },
+      {
+        "index": 3,
+        "start": "00:00:06,800",
+        "end": "00:00:09,850",
+        "text": "Menos o que estava aberto\nna bancada de Arthur Vaz."
+      },
+      {
+        "index": 4,
+        "start": "00:00:10,200",
+        "end": "00:00:14,500",
+        "text": "Os peritos acharam que ele\nfoi pego pela fumaça."
+      },
+      {
+        "index": 5,
+        "start": "00:00:14,900",
+        "end": "00:00:19,600",
+        "text": "Mas repare no círculo\nlimpo sobre a madeira."
+      },
+      {
+        "index": 6,
+        "start": "00:00:20,150",
+        "end": "00:00:24,200",
+        "text": "O curto-circuito no teto\ncomeçou às três e quatorze."
+      },
+      {
+        "index": 7,
+        "start": "00:00:24,550",
+        "end": "00:00:29,750",
+        "text": "Só que o cronógrafo dele\nfoi travado às três e onze."
+      },
+      {
+        "index": 8,
+        "start": "00:00:30,200",
+        "end": "00:00:34,600",
+        "text": "Três minutos antes, Arthur\njá tinha puxado a coroa."
+      },
+      {
+        "index": 9,
+        "start": "00:00:35,000",
+        "end": "00:00:39,800",
+        "text": "Ele esperava o calor\nativar o selo térmico."
+      },
+      {
+        "index": 10,
+        "start": "00:00:40,250",
+        "end": "00:00:44,800",
+        "text": "O incêndio fundiu a trava\nde chumbo interna,"
+      },
+      {
+        "index": 11,
+        "start": "00:00:45,150",
+        "end": "00:00:49,800",
+        "text": "selando o cofre escondido\ndebaixo do eixo central."
+      },
+      {
+        "index": 12,
+        "start": "00:00:50,200",
+        "end": "00:00:55,100",
+        "text": "E dentro daquele vidro\nficou a única prova..."
+      },
+      {
+        "index": 13,
+        "start": "00:00:55,500",
+        "end": "00:00:59,400",
+        "text": "exatamente onde tudo começou,\ntrês minutos antes."
+      }
+    ]
+  }
+}
