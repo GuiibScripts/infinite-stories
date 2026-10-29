@@ -6,7 +6,8 @@
   "qa_status": "REVIEW",
   "qa_notes": [
     "Manifesto de planejamento, ainda sem mídia gerada ou revisão humana.",
-    "Roteiro com perspectiva crítica; checar cada alegação e inserir documentos/fontes reais na pós-produção."
+    "Roteiro com perspectiva crítica; inserir documentos e números reais na pós-produção após conferência das fontes.",
+    "Narração estimada em aproximadamente 60 segundos; confirmar tempo após síntese de voz."
   ],
   "author_lock": {
     "original_author_premise": "Vídeo documental de 60 segundos com perspectiva crítica sobre os governos do PT, destacando crises de credibilidade, corrupção investigada, recessão e responsabilidade pública sem apresentar interpretações como fatos provados.",
@@ -476,7 +477,7 @@
     "ambience_audio_local_path": "assets/audio/brasil-ciclo-pt-custos-e-controversias_ambience.wav",
     "subtitles_local_path": "assets/subtitles/brasil-ciclo-pt-custos-e-controversias.srt",
     "total_word_count": 149,
-    "estimated_total_speech_sec": 64.8,
+    "estimated_total_speech_sec": 59.6,
     "voice_profile": {
       "language": "pt-BR",
       "timbre": "Masculino grave, maduro, investigativo e contido",
@@ -487,163 +488,193 @@
       {
         "index": 1,
         "start": "00:00:00,300",
-        "end": "00:00:03,500",
-        "text": "Em 2003, o PT chegou ao\nPlanalto prometendo ética,"
+        "end": "00:00:02,250",
+        "text": "Em 2003, o PT chegou"
       },
       {
         "index": 2,
-        "start": "00:00:03,580",
-        "end": "00:00:06,780",
-        "text": "inclusão e crescimento."
+        "start": "00:00:02,300",
+        "end": "00:00:04,250",
+        "text": "ao Planalto prometendo\nética, inclusão"
       },
       {
         "index": 3,
-        "start": "00:00:06,860",
-        "end": "00:00:09,700",
-        "text": "Mas os anos seguintes também\ntrouxeram alertas sobre"
+        "start": "00:00:04,300",
+        "end": "00:00:06,250",
+        "text": "e crescimento. Mas os anos"
       },
       {
         "index": 4,
-        "start": "00:00:10,140",
-        "end": "00:00:09,700",
-        "text": "poder e responsabilidade."
+        "start": "00:00:06,300",
+        "end": "00:00:08,250",
+        "text": "seguintes também trouxeram\nalertas sobre"
       },
       {
         "index": 5,
-        "start": "00:00:10,300",
-        "end": "00:00:13,100",
-        "text": "Em 2005, o Mensalão abalou o\ngoverno."
+        "start": "00:00:08,300",
+        "end": "00:00:09,450",
+        "text": "poder e responsabilidade."
       },
       {
         "index": 6,
-        "start": "00:00:13,180",
-        "end": "00:00:16,380",
-        "text": "O Supremo condenou figuras\ncentrais, transformando a"
+        "start": "00:00:10,300",
+        "end": "00:00:12,250",
+        "text": "Em 2005, o Mensalão abalou"
       },
       {
         "index": 7,
-        "start": "00:00:16,460",
-        "end": "00:00:19,660",
-        "text": "promessa de renovação\npolítica numa grave crise de"
+        "start": "00:00:12,300",
+        "end": "00:00:14,250",
+        "text": "o governo. O Supremo\ncondenou"
       },
       {
         "index": 8,
-        "start": "00:00:19,740",
-        "end": "00:00:19,700",
-        "text": "credibilidade."
+        "start": "00:00:14,300",
+        "end": "00:00:16,250",
+        "text": "figuras centrais,\ntransformando a promessa"
       },
       {
         "index": 9,
-        "start": "00:00:20,300",
-        "end": "00:00:23,500",
-        "text": "Depois, a Lava Jato revelou\npropinas em contratos da"
+        "start": "00:00:16,300",
+        "end": "00:00:18,250",
+        "text": "de renovação política numa\ngrave"
       },
       {
         "index": 10,
-        "start": "00:00:23,580",
-        "end": "00:00:26,780",
-        "text": "Petrobras e empreiteiras."
+        "start": "00:00:18,300",
+        "end": "00:00:19,450",
+        "text": "crise de credibilidade."
       },
       {
         "index": 11,
-        "start": "00:00:26,860",
-        "end": "00:00:29,700",
-        "text": "A investigação atingiu\npolíticos de vários partidos"
+        "start": "00:00:20,300",
+        "end": "00:00:22,090",
+        "text": "Depois, a Lava Jato revelou"
       },
       {
         "index": 12,
-        "start": "00:00:30,140",
-        "end": "00:00:29,700",
-        "text": "e expôs falhas graves de\nfiscalização."
+        "start": "00:00:22,140",
+        "end": "00:00:23,930",
+        "text": "propinas em contratos da\nPetrobras"
       },
       {
         "index": 13,
-        "start": "00:00:30,300",
-        "end": "00:00:33,500",
-        "text": "Em 2015 e 2016, o PIB\nbrasileiro caiu nos dois"
+        "start": "00:00:23,980",
+        "end": "00:00:25,770",
+        "text": "e empreiteiras. A\ninvestigação atingiu"
       },
       {
         "index": 14,
-        "start": "00:00:33,580",
-        "end": "00:00:36,780",
-        "text": "anos."
+        "start": "00:00:25,820",
+        "end": "00:00:27,610",
+        "text": "políticos de vários partidos\ne"
       },
       {
         "index": 15,
-        "start": "00:00:36,860",
-        "end": "00:00:39,700",
-        "text": "Consumo e investimento\nrecuaram; escolhas"
+        "start": "00:00:27,660",
+        "end": "00:00:29,450",
+        "text": "expôs falhas graves de\nfiscalização."
       },
       {
         "index": 16,
-        "start": "00:00:40,140",
-        "end": "00:00:39,700",
-        "text": "econômicas do período\ncontribuíram para uma crise"
+        "start": "00:00:30,300",
+        "end": "00:00:32,167",
+        "text": "Em 2015 e 2016, o"
       },
       {
         "index": 17,
-        "start": "00:00:43,420",
-        "end": "00:00:39,700",
-        "text": "profunda."
+        "start": "00:00:32,217",
+        "end": "00:00:34,083",
+        "text": "PIB brasileiro caiu nos dois"
       },
       {
         "index": 18,
-        "start": "00:00:40,300",
-        "end": "00:00:43,500",
-        "text": "Dilma sofreu impeachment em\n2016 por questões"
+        "start": "00:00:34,133",
+        "end": "00:00:36,000",
+        "text": "anos. Consumo e investimento\nrecuaram;"
       },
       {
         "index": 19,
-        "start": "00:00:43,580",
-        "end": "00:00:46,780",
-        "text": "orçamentárias."
+        "start": "00:00:36,050",
+        "end": "00:00:37,917",
+        "text": "escolhas econômicas do\nperíodo contribuíram"
       },
       {
         "index": 20,
-        "start": "00:00:46,860",
-        "end": "00:00:49,700",
-        "text": "Em 2021, o STF anulou\ncondenações de Lula por"
+        "start": "00:00:37,967",
+        "end": "00:00:39,450",
+        "text": "para uma crise profunda."
       },
       {
         "index": 21,
-        "start": "00:00:50,140",
-        "end": "00:00:49,700",
-        "text": "incompetência da vara de\nCuritiba, não por absolvição"
+        "start": "00:00:40,300",
+        "end": "00:00:41,954",
+        "text": "Dilma sofreu impeachment em\n2016"
       },
       {
         "index": 22,
-        "start": "00:00:53,420",
-        "end": "00:00:49,700",
-        "text": "de mérito."
+        "start": "00:00:42,004",
+        "end": "00:00:43,657",
+        "text": "por questões orçamentárias.\nEm 2021,"
       },
       {
         "index": 23,
-        "start": "00:00:50,300",
-        "end": "00:00:53,500",
-        "text": "A crítica ao ciclo petista é\nesta: promessas não"
+        "start": "00:00:43,707",
+        "end": "00:00:45,361",
+        "text": "o STF anulou condenações de"
       },
       {
         "index": 24,
-        "start": "00:00:53,580",
-        "end": "00:00:56,780",
-        "text": "substituem transparência,\nresponsabilidade fiscal e"
+        "start": "00:00:45,411",
+        "end": "00:00:47,065",
+        "text": "Lula por incompetência da\nvara"
       },
       {
         "index": 25,
-        "start": "00:00:56,860",
-        "end": "00:00:59,700",
-        "text": "prestação de contas."
+        "start": "00:00:47,115",
+        "end": "00:00:48,769",
+        "text": "de Curitiba, não por\nabsolvição"
       },
       {
         "index": 26,
-        "start": "00:01:00,140",
-        "end": "00:00:59,700",
-        "text": "Governos devem responder\npelos resultados — e a"
+        "start": "00:00:48,819",
+        "end": "00:00:49,450",
+        "text": "de mérito."
       },
       {
         "index": 27,
-        "start": "00:01:03,420",
-        "end": "00:00:59,700",
+        "start": "00:00:50,300",
+        "end": "00:00:51,954",
+        "text": "A crítica ao ciclo petista"
+      },
+      {
+        "index": 28,
+        "start": "00:00:52,004",
+        "end": "00:00:53,657",
+        "text": "é esta: promessas não\nsubstituem"
+      },
+      {
+        "index": 29,
+        "start": "00:00:53,707",
+        "end": "00:00:55,361",
+        "text": "transparência,\nresponsabilidade fiscal e"
+      },
+      {
+        "index": 30,
+        "start": "00:00:55,411",
+        "end": "00:00:57,065",
+        "text": "de contas. Governos devem\nresponder"
+      },
+      {
+        "index": 31,
+        "start": "00:00:57,115",
+        "end": "00:00:58,769",
+        "text": "pelos resultados — e a"
+      },
+      {
+        "index": 32,
+        "start": "00:00:58,819",
+        "end": "00:00:59,450",
         "text": "cobrança recomeça."
       }
     ]
