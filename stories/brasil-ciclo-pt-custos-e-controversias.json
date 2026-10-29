@@ -1,0 +1,669 @@
+{
+  "schema_version": "1.0.0",
+  "story_id": "INF-002",
+  "slug": "brasil-ciclo-pt-custos-e-controversias",
+  "title": "Brasil: promessas, escândalos e a conta pública",
+  "qa_status": "REVIEW",
+  "qa_notes": [
+    "Manifesto de planejamento, ainda sem mídia gerada ou revisão humana.",
+    "Roteiro com perspectiva crítica; checar cada alegação e inserir documentos/fontes reais na pós-produção."
+  ],
+  "author_lock": {
+    "original_author_premise": "Vídeo documental de 60 segundos com perspectiva crítica sobre os governos do PT, destacando crises de credibilidade, corrupção investigada, recessão e responsabilidade pública sem apresentar interpretações como fatos provados.",
+    "immutable_facts": [
+      "O PT assumiu a Presidência em 2003.",
+      "O Mensalão veio a público em 2005 e houve condenações no STF.",
+      "O PIB brasileiro caiu em 2015 e 2016 segundo dados do IBGE.",
+      "Em 2021, o STF confirmou a anulação das condenações de Lula por incompetência da 13ª Vara Federal de Curitiba."
+    ],
+    "author_approved_adaptation": true
+  },
+  "video_pattern_expectation": {
+    "final_output_local_path": "output/brasil-ciclo-pt-custos-e-controversias_final.mp4",
+    "aspect_ratio": "9:16",
+    "width_px": 1080,
+    "height_px": 1920,
+    "fps": 30,
+    "target_duration_sec": 60,
+    "duration_tolerance_sec": 1.5,
+    "video_codec": "h264",
+    "pixel_format": "yuv420p",
+    "audio_codec": "aac",
+    "audio_sample_rate_hz": 48000,
+    "subtitles_burned_in": true
+  },
+  "visual_bible": {
+    "era_and_setting": "Linha do tempo documental brasileira de 2003 a 2021, com Brasília, arquivos jornalísticos e cenas econômicas urbanas sem simular imagens de arquivo inexistentes.",
+    "color_palette_hex": [
+      "#17212B",
+      "#C5A46D",
+      "#F0E9DB",
+      "#8B302A",
+      "#3E5B4F"
+    ],
+    "lighting_setup": "Luz natural lateral de arquivo a 5000K, sombras discretas e reflexos coerentes; tons frios em documentos e acentos quentes em cenas urbanas.",
+    "lens_profile": "Início em 35mm, aproximação para 50mm e 85mm/macro, estabilizada em trilho óptico, profundidade de campo controlada.",
+    "immutable_anchors": [
+      "Bandeira brasileira sem deformações.",
+      "Arquitetura do Palácio do Planalto e do STF sem alterações estruturais.",
+      "Inserir manchetes e números reais somente na pós-produção com fontes verificadas.",
+      "Paleta documental sóbria e materiais fisicamente realistas."
+    ]
+  },
+  "loop_specification": {
+    "anchor_frame_f000_path": "assets/references/brasil-pt-F000-master-4k.png",
+    "anchor_frame_description": "Plano vertical de Brasília ao amanhecer, Esplanada em perspectiva realista, bandeira brasileira em primeiro plano lateral e Palácio do Planalto no eixo central.",
+    "loop_strategy": "PORTAL_FRAME_MATCH",
+    "return_trajectory_explanation": "O zoom termina numa lupa sobre uma mesa de arquivo; o reflexo contém o mesmo plano geral de Brasília usado em F_000. Compor o reflexo na pós-produção sem crossfade genérico.",
+    "audio_loop_bridge": "Ambiência contínua de vento leve e cidade distante. A última frase sobre prestação de contas conecta ao gancho sobre promessas, sem cortar a voz."
+  },
+  "macro_blocks": [
+    {
+      "block_id": "B1_00_10",
+      "time_start_sec": 0,
+      "time_end_sec": 10,
+      "narrative_goal": "Abrir com Brasília, o Planalto e documentos de época.",
+      "narration_ptbr": "Em 2003, o PT chegou ao Planalto prometendo ética, inclusão e crescimento. Mas os anos seguintes também trouxeram alertas sobre poder e responsabilidade.",
+      "word_count": 23,
+      "estimated_speech_sec": 10,
+      "visual_discovery": "Abrir com Brasília, o Planalto e documentos de época."
+    },
+    {
+      "block_id": "B2_10_20",
+      "time_start_sec": 10,
+      "time_end_sec": 20,
+      "narrative_goal": "Manchetes históricas e autos judiciais do Mensalão.",
+      "narration_ptbr": "Em 2005, o Mensalão abalou o governo. O Supremo condenou figuras centrais, transformando a promessa de renovação política numa grave crise de credibilidade.",
+      "word_count": 23,
+      "estimated_speech_sec": 10,
+      "visual_discovery": "Manchetes históricas e autos judiciais do Mensalão."
+    },
+    {
+      "block_id": "B3_20_30",
+      "time_start_sec": 20,
+      "time_end_sec": 30,
+      "narrative_goal": "Documentos de investigação e ambiente da Petrobras.",
+      "narration_ptbr": "Depois, a Lava Jato revelou propinas em contratos da Petrobras e empreiteiras. A investigação atingiu políticos de vários partidos e expôs falhas graves de fiscalização.",
+      "word_count": 25,
+      "estimated_speech_sec": 10.9,
+      "visual_discovery": "Documentos de investigação e ambiente da Petrobras."
+    },
+    {
+      "block_id": "B4_30_40",
+      "time_start_sec": 30,
+      "time_end_sec": 40,
+      "narrative_goal": "Gráfico oficial do PIB e comércio em retração.",
+      "narration_ptbr": "Em 2015 e 2016, o PIB brasileiro caiu nos dois anos. Consumo e investimento recuaram; escolhas econômicas do período contribuíram para uma crise profunda.",
+      "word_count": 24,
+      "estimated_speech_sec": 10.4,
+      "visual_discovery": "Gráfico oficial do PIB e comércio em retração."
+    },
+    {
+      "block_id": "B5_40_50",
+      "time_start_sec": 40,
+      "time_end_sec": 50,
+      "narrative_goal": "Documentos do impeachment e decisão do STF.",
+      "narration_ptbr": "Dilma sofreu impeachment em 2016 por questões orçamentárias. Em 2021, o STF anulou condenações de Lula por incompetência da vara de Curitiba, não por absolvição de mérito.",
+      "word_count": 27,
+      "estimated_speech_sec": 11.7,
+      "visual_discovery": "Documentos do impeachment e decisão do STF."
+    },
+    {
+      "block_id": "B6_50_60",
+      "time_start_sec": 50,
+      "time_end_sec": 60,
+      "narrative_goal": "Lupa refletindo Brasília e retorno exato ao quadro inicial.",
+      "narration_ptbr": "A crítica ao ciclo petista é esta: promessas não substituem transparência, responsabilidade fiscal e prestação de contas. Governos devem responder pelos resultados — e a cobrança recomeça.",
+      "word_count": 27,
+      "estimated_speech_sec": 11.7,
+      "visual_discovery": "Lupa refletindo Brasília e retorno exato ao quadro inicial."
+    }
+  ],
+  "segments": [
+    {
+      "segment_id": "SEG_01",
+      "macro_block_id": "B1_00_10",
+      "time_start_sec": 0,
+      "time_end_sec": 6,
+      "duration_sec": 6,
+      "zoom_technique": "TECH_B_GENERATIVE",
+      "camera_position": "Eixo óptico central, altura aproximada de 1.55m, alinhado com Palácio do Planalto e bandeira brasileira.",
+      "focal_point": "Palácio do Planalto e bandeira brasileira",
+      "framing_scale": "Wide Shot",
+      "desired_movement": "Avanço físico contínuo no eixo Z, com velocidade constante e sem cortes aparentes.",
+      "spatial_lock": {
+        "parent_segment_id": null,
+        "target_roi_norm": [
+          0.5,
+          0.52,
+          0.55,
+          0.55
+        ],
+        "scale_factor": 1.8,
+        "focal_length_mm": 35
+      },
+      "frame_in_ref": "assets/references/brasil-pt-F000-master-4k.png",
+      "frame_out_ref": "assets/references/brasil-pt-F006-planalto.png",
+      "expected_clip_path": "assets/generated/brasil-pt_SEG_01.mp4",
+      "generation_prompt": "[ASPECT & FORMAT]: Vertical 9:16 (1080x1920), photorealistic live-action documentary cinema footage, ARRI Alexa Mini LF, 35mm prime lens, 6 seconds, 30fps.\n[CONTINUITY ANCHOR]: Continue strictly from assets/references/brasil-pt-F000-master-4k.png; preserve exact perspective, texture and focal-object position.\n[SCENE & ENVIRONMENT]: Historically grounded Brazilian political documentary scene, realistic Brasília architecture, archive papers, stone, glass and metal, with natural wear. No invented archival lettering.\n[IMMUTABLE SUBJECTS]: Period-appropriate setting, Brazilian national colors used subtly; no fabricated politicians, fake newspaper text or falsely attributed quotes.\n[SUBTLE PHYSICAL ACTION]: Dust moves slowly through natural side light; flag movement is minimal and physically plausible.\n[CAMERA Z-AXIS TRAJECTORY]: Continuous stabilized forward dolly along the Z-axis toward Palácio do Planalto e bandeira brasileira, centered near [0.50,0.52], no lateral drift.\n[OPTICAL FOCUS & LIGHTING]: Natural key light from upper left at 5000K, restrained contrast, realistic reflections and smooth focus transition onto Palácio do Planalto e bandeira brasileira.\n[MATERIALS & TEXTURES]: Real paper fibers, fine metal scratches, natural stone pores and restrained uniform 35mm grain.\n[TARGET EXIT FRAME]: End precisely framed on Palácio do Planalto e bandeira brasileira, matching assets/references/brasil-pt-F006-planalto.png; segment 1 must connect geometrically to the next reference.\n[NEGATIVE CONSTRAINTS]: No camera cuts, no dissolve, no speed ramps, no morphing, no warped architecture, no invented legible text, no fake headlines, no false quotations, no 3D CGI look, no on-screen subtitles.",
+      "continuity_risks": [
+        "O modelo pode distorcer texto documental; usar fontes reais inseridas na pós-produção.",
+        "A transição pode quebrar perspectiva ou alterar arquitetura entre referências."
+      ],
+      "approval_criteria": [
+        "Quadro final alinhado à referência de saída e ao segmento seguinte.",
+        "Nenhum texto falso, citação inventada ou deformação arquitetônica visível."
+      ]
+    },
+    {
+      "segment_id": "SEG_02",
+      "macro_block_id": "B1_00_10",
+      "time_start_sec": 6,
+      "time_end_sec": 12,
+      "duration_sec": 6,
+      "zoom_technique": "TECH_B_GENERATIVE",
+      "camera_position": "Eixo óptico central, altura aproximada de 1.55m, alinhado com manchete de jornal de 2005 sobre o Mensalão.",
+      "focal_point": "manchete de jornal de 2005 sobre o Mensalão",
+      "framing_scale": "Wide-to-Medium",
+      "desired_movement": "Avanço físico contínuo no eixo Z, com velocidade constante e sem cortes aparentes.",
+      "spatial_lock": {
+        "parent_segment_id": "SEG_01",
+        "target_roi_norm": [
+          0.5,
+          0.52,
+          0.55,
+          0.55
+        ],
+        "scale_factor": 1.8,
+        "focal_length_mm": 35
+      },
+      "frame_in_ref": "assets/references/brasil-pt-F006-planalto.png",
+      "frame_out_ref": "assets/references/brasil-pt-F012-manchetes-2005.png",
+      "expected_clip_path": "assets/generated/brasil-pt_SEG_02.mp4",
+      "generation_prompt": "[ASPECT & FORMAT]: Vertical 9:16 (1080x1920), photorealistic live-action documentary cinema footage, ARRI Alexa Mini LF, 35mm prime lens, 6 seconds, 30fps.\n[CONTINUITY ANCHOR]: Continue strictly from assets/references/brasil-pt-F006-planalto.png; preserve exact perspective, texture and focal-object position.\n[SCENE & ENVIRONMENT]: Historically grounded Brazilian political documentary scene, realistic Brasília architecture, archive papers, stone, glass and metal, with natural wear. No invented archival lettering.\n[IMMUTABLE SUBJECTS]: Period-appropriate setting, Brazilian national colors used subtly; no fabricated politicians, fake newspaper text or falsely attributed quotes.\n[SUBTLE PHYSICAL ACTION]: Dust moves slowly through natural side light; flag movement is minimal and physically plausible.\n[CAMERA Z-AXIS TRAJECTORY]: Continuous stabilized forward dolly along the Z-axis toward manchete de jornal de 2005 sobre o Mensalão, centered near [0.50,0.52], no lateral drift.\n[OPTICAL FOCUS & LIGHTING]: Natural key light from upper left at 5000K, restrained contrast, realistic reflections and smooth focus transition onto manchete de jornal de 2005 sobre o Mensalão.\n[MATERIALS & TEXTURES]: Real paper fibers, fine metal scratches, natural stone pores and restrained uniform 35mm grain.\n[TARGET EXIT FRAME]: End precisely framed on manchete de jornal de 2005 sobre o Mensalão, matching assets/references/brasil-pt-F012-manchetes-2005.png; segment 2 must connect geometrically to the next reference.\n[NEGATIVE CONSTRAINTS]: No camera cuts, no dissolve, no speed ramps, no morphing, no warped architecture, no invented legible text, no fake headlines, no false quotations, no 3D CGI look, no on-screen subtitles.",
+      "continuity_risks": [
+        "O modelo pode distorcer texto documental; usar fontes reais inseridas na pós-produção.",
+        "A transição pode quebrar perspectiva ou alterar arquitetura entre referências."
+      ],
+      "approval_criteria": [
+        "Quadro final alinhado à referência de saída e ao segmento seguinte.",
+        "Nenhum texto falso, citação inventada ou deformação arquitetônica visível."
+      ]
+    },
+    {
+      "segment_id": "SEG_03",
+      "macro_block_id": "B2_10_20",
+      "time_start_sec": 12,
+      "time_end_sec": 18,
+      "duration_sec": 6,
+      "zoom_technique": "TECH_B_GENERATIVE",
+      "camera_position": "Eixo óptico central, altura aproximada de 1.55m, alinhado com documentos de investigação da Petrobras.",
+      "focal_point": "documentos de investigação da Petrobras",
+      "framing_scale": "Medium Close-Up",
+      "desired_movement": "Avanço físico contínuo no eixo Z, com velocidade constante e sem cortes aparentes.",
+      "spatial_lock": {
+        "parent_segment_id": "SEG_02",
+        "target_roi_norm": [
+          0.5,
+          0.52,
+          0.55,
+          0.55
+        ],
+        "scale_factor": 1.8,
+        "focal_length_mm": 35
+      },
+      "frame_in_ref": "assets/references/brasil-pt-F012-manchetes-2005.png",
+      "frame_out_ref": "assets/references/brasil-pt-F018-documentos-petrobras.png",
+      "expected_clip_path": "assets/generated/brasil-pt_SEG_03.mp4",
+      "generation_prompt": "[ASPECT & FORMAT]: Vertical 9:16 (1080x1920), photorealistic live-action documentary cinema footage, ARRI Alexa Mini LF, 35mm prime lens, 6 seconds, 30fps.\n[CONTINUITY ANCHOR]: Continue strictly from assets/references/brasil-pt-F012-manchetes-2005.png; preserve exact perspective, texture and focal-object position.\n[SCENE & ENVIRONMENT]: Historically grounded Brazilian political documentary scene, realistic Brasília architecture, archive papers, stone, glass and metal, with natural wear. No invented archival lettering.\n[IMMUTABLE SUBJECTS]: Period-appropriate setting, Brazilian national colors used subtly; no fabricated politicians, fake newspaper text or falsely attributed quotes.\n[SUBTLE PHYSICAL ACTION]: Dust moves slowly through natural side light; flag movement is minimal and physically plausible.\n[CAMERA Z-AXIS TRAJECTORY]: Continuous stabilized forward dolly along the Z-axis toward documentos de investigação da Petrobras, centered near [0.50,0.52], no lateral drift.\n[OPTICAL FOCUS & LIGHTING]: Natural key light from upper left at 5000K, restrained contrast, realistic reflections and smooth focus transition onto documentos de investigação da Petrobras.\n[MATERIALS & TEXTURES]: Real paper fibers, fine metal scratches, natural stone pores and restrained uniform 35mm grain.\n[TARGET EXIT FRAME]: End precisely framed on documentos de investigação da Petrobras, matching assets/references/brasil-pt-F018-documentos-petrobras.png; segment 3 must connect geometrically to the next reference.\n[NEGATIVE CONSTRAINTS]: No camera cuts, no dissolve, no speed ramps, no morphing, no warped architecture, no invented legible text, no fake headlines, no false quotations, no 3D CGI look, no on-screen subtitles.",
+      "continuity_risks": [
+        "O modelo pode distorcer texto documental; usar fontes reais inseridas na pós-produção.",
+        "A transição pode quebrar perspectiva ou alterar arquitetura entre referências."
+      ],
+      "approval_criteria": [
+        "Quadro final alinhado à referência de saída e ao segmento seguinte.",
+        "Nenhum texto falso, citação inventada ou deformação arquitetônica visível."
+      ]
+    },
+    {
+      "segment_id": "SEG_04",
+      "macro_block_id": "B2_10_20",
+      "time_start_sec": 18,
+      "time_end_sec": 24,
+      "duration_sec": 6,
+      "zoom_technique": "TECH_B_GENERATIVE",
+      "camera_position": "Eixo óptico central, altura aproximada de 1.55m, alinhado com gráfico oficial do PIB brasileiro em 2015 e 2016.",
+      "focal_point": "gráfico oficial do PIB brasileiro em 2015 e 2016",
+      "framing_scale": "Close-Up",
+      "desired_movement": "Avanço físico contínuo no eixo Z, com velocidade constante e sem cortes aparentes.",
+      "spatial_lock": {
+        "parent_segment_id": "SEG_03",
+        "target_roi_norm": [
+          0.5,
+          0.52,
+          0.55,
+          0.55
+        ],
+        "scale_factor": 1.8,
+        "focal_length_mm": 50
+      },
+      "frame_in_ref": "assets/references/brasil-pt-F018-documentos-petrobras.png",
+      "frame_out_ref": "assets/references/brasil-pt-F024-grafico-pib.png",
+      "expected_clip_path": "assets/generated/brasil-pt_SEG_04.mp4",
+      "generation_prompt": "[ASPECT & FORMAT]: Vertical 9:16 (1080x1920), photorealistic live-action documentary cinema footage, ARRI Alexa Mini LF, 50mm prime lens, 6 seconds, 30fps.\n[CONTINUITY ANCHOR]: Continue strictly from assets/references/brasil-pt-F018-documentos-petrobras.png; preserve exact perspective, texture and focal-object position.\n[SCENE & ENVIRONMENT]: Historically grounded Brazilian political documentary scene, realistic Brasília architecture, archive papers, stone, glass and metal, with natural wear. No invented archival lettering.\n[IMMUTABLE SUBJECTS]: Period-appropriate setting, Brazilian national colors used subtly; no fabricated politicians, fake newspaper text or falsely attributed quotes.\n[SUBTLE PHYSICAL ACTION]: Dust moves slowly through natural side light; flag movement is minimal and physically plausible.\n[CAMERA Z-AXIS TRAJECTORY]: Continuous stabilized forward dolly along the Z-axis toward gráfico oficial do PIB brasileiro em 2015 e 2016, centered near [0.50,0.52], no lateral drift.\n[OPTICAL FOCUS & LIGHTING]: Natural key light from upper left at 5000K, restrained contrast, realistic reflections and smooth focus transition onto gráfico oficial do PIB brasileiro em 2015 e 2016.\n[MATERIALS & TEXTURES]: Real paper fibers, fine metal scratches, natural stone pores and restrained uniform 35mm grain.\n[TARGET EXIT FRAME]: End precisely framed on gráfico oficial do PIB brasileiro em 2015 e 2016, matching assets/references/brasil-pt-F024-grafico-pib.png; segment 4 must connect geometrically to the next reference.\n[NEGATIVE CONSTRAINTS]: No camera cuts, no dissolve, no speed ramps, no morphing, no warped architecture, no invented legible text, no fake headlines, no false quotations, no 3D CGI look, no on-screen subtitles.",
+      "continuity_risks": [
+        "O modelo pode distorcer texto documental; usar fontes reais inseridas na pós-produção.",
+        "A transição pode quebrar perspectiva ou alterar arquitetura entre referências."
+      ],
+      "approval_criteria": [
+        "Quadro final alinhado à referência de saída e ao segmento seguinte.",
+        "Nenhum texto falso, citação inventada ou deformação arquitetônica visível."
+      ]
+    },
+    {
+      "segment_id": "SEG_05",
+      "macro_block_id": "B3_20_30",
+      "time_start_sec": 24,
+      "time_end_sec": 30,
+      "duration_sec": 6,
+      "zoom_technique": "TECH_C_HYBRID",
+      "camera_position": "Eixo óptico central, altura aproximada de 1.55m, alinhado com porta de comércio fechando durante a recessão.",
+      "focal_point": "porta de comércio fechando durante a recessão",
+      "framing_scale": "Close-Up",
+      "desired_movement": "Avanço físico contínuo no eixo Z, com velocidade constante e sem cortes aparentes.",
+      "spatial_lock": {
+        "parent_segment_id": "SEG_04",
+        "target_roi_norm": [
+          0.5,
+          0.52,
+          0.55,
+          0.55
+        ],
+        "scale_factor": 1.8,
+        "focal_length_mm": 50
+      },
+      "frame_in_ref": "assets/references/brasil-pt-F024-grafico-pib.png",
+      "frame_out_ref": "assets/references/brasil-pt-F030-loja-fechando.png",
+      "expected_clip_path": "assets/generated/brasil-pt_SEG_05.mp4",
+      "generation_prompt": "[ASPECT & FORMAT]: Vertical 9:16 (1080x1920), photorealistic live-action documentary cinema footage, ARRI Alexa Mini LF, 50mm prime lens, 6 seconds, 30fps.\n[CONTINUITY ANCHOR]: Continue strictly from assets/references/brasil-pt-F024-grafico-pib.png; preserve exact perspective, texture and focal-object position.\n[SCENE & ENVIRONMENT]: Historically grounded Brazilian political documentary scene, realistic Brasília architecture, archive papers, stone, glass and metal, with natural wear. No invented archival lettering.\n[IMMUTABLE SUBJECTS]: Period-appropriate setting, Brazilian national colors used subtly; no fabricated politicians, fake newspaper text or falsely attributed quotes.\n[SUBTLE PHYSICAL ACTION]: Dust moves slowly through natural side light; flag movement is minimal and physically plausible.\n[CAMERA Z-AXIS TRAJECTORY]: Continuous stabilized forward dolly along the Z-axis toward porta de comércio fechando durante a recessão, centered near [0.50,0.52], no lateral drift.\n[OPTICAL FOCUS & LIGHTING]: Natural key light from upper left at 5000K, restrained contrast, realistic reflections and smooth focus transition onto porta de comércio fechando durante a recessão.\n[MATERIALS & TEXTURES]: Real paper fibers, fine metal scratches, natural stone pores and restrained uniform 35mm grain.\n[TARGET EXIT FRAME]: End precisely framed on porta de comércio fechando durante a recessão, matching assets/references/brasil-pt-F030-loja-fechando.png; segment 5 must connect geometrically to the next reference.\n[NEGATIVE CONSTRAINTS]: No camera cuts, no dissolve, no speed ramps, no morphing, no warped architecture, no invented legible text, no fake headlines, no false quotations, no 3D CGI look, no on-screen subtitles.",
+      "continuity_risks": [
+        "O modelo pode distorcer texto documental; usar fontes reais inseridas na pós-produção.",
+        "A transição pode quebrar perspectiva ou alterar arquitetura entre referências."
+      ],
+      "approval_criteria": [
+        "Quadro final alinhado à referência de saída e ao segmento seguinte.",
+        "Nenhum texto falso, citação inventada ou deformação arquitetônica visível."
+      ]
+    },
+    {
+      "segment_id": "SEG_06",
+      "macro_block_id": "B3_20_30",
+      "time_start_sec": 30,
+      "time_end_sec": 36,
+      "duration_sec": 6,
+      "zoom_technique": "TECH_B_GENERATIVE",
+      "camera_position": "Eixo óptico central, altura aproximada de 1.55m, alinhado com documentos oficiais do impeachment de 2016.",
+      "focal_point": "documentos oficiais do impeachment de 2016",
+      "framing_scale": "Macro Detail",
+      "desired_movement": "Avanço físico contínuo no eixo Z, com velocidade constante e sem cortes aparentes.",
+      "spatial_lock": {
+        "parent_segment_id": "SEG_05",
+        "target_roi_norm": [
+          0.5,
+          0.52,
+          0.55,
+          0.55
+        ],
+        "scale_factor": 1.8,
+        "focal_length_mm": 50
+      },
+      "frame_in_ref": "assets/references/brasil-pt-F030-loja-fechando.png",
+      "frame_out_ref": "assets/references/brasil-pt-F036-documentos-impeachment.png",
+      "expected_clip_path": "assets/generated/brasil-pt_SEG_06.mp4",
+      "generation_prompt": "[ASPECT & FORMAT]: Vertical 9:16 (1080x1920), photorealistic live-action documentary cinema footage, ARRI Alexa Mini LF, 50mm prime lens, 6 seconds, 30fps.\n[CONTINUITY ANCHOR]: Continue strictly from assets/references/brasil-pt-F030-loja-fechando.png; preserve exact perspective, texture and focal-object position.\n[SCENE & ENVIRONMENT]: Historically grounded Brazilian political documentary scene, realistic Brasília architecture, archive papers, stone, glass and metal, with natural wear. No invented archival lettering.\n[IMMUTABLE SUBJECTS]: Period-appropriate setting, Brazilian national colors used subtly; no fabricated politicians, fake newspaper text or falsely attributed quotes.\n[SUBTLE PHYSICAL ACTION]: Dust moves slowly through natural side light; flag movement is minimal and physically plausible.\n[CAMERA Z-AXIS TRAJECTORY]: Continuous stabilized forward dolly along the Z-axis toward documentos oficiais do impeachment de 2016, centered near [0.50,0.52], no lateral drift.\n[OPTICAL FOCUS & LIGHTING]: Natural key light from upper left at 5000K, restrained contrast, realistic reflections and smooth focus transition onto documentos oficiais do impeachment de 2016.\n[MATERIALS & TEXTURES]: Real paper fibers, fine metal scratches, natural stone pores and restrained uniform 35mm grain.\n[TARGET EXIT FRAME]: End precisely framed on documentos oficiais do impeachment de 2016, matching assets/references/brasil-pt-F036-documentos-impeachment.png; segment 6 must connect geometrically to the next reference.\n[NEGATIVE CONSTRAINTS]: No camera cuts, no dissolve, no speed ramps, no morphing, no warped architecture, no invented legible text, no fake headlines, no false quotations, no 3D CGI look, no on-screen subtitles.",
+      "continuity_risks": [
+        "O modelo pode distorcer texto documental; usar fontes reais inseridas na pós-produção.",
+        "A transição pode quebrar perspectiva ou alterar arquitetura entre referências."
+      ],
+      "approval_criteria": [
+        "Quadro final alinhado à referência de saída e ao segmento seguinte.",
+        "Nenhum texto falso, citação inventada ou deformação arquitetônica visível."
+      ]
+    },
+    {
+      "segment_id": "SEG_07",
+      "macro_block_id": "B4_30_40",
+      "time_start_sec": 36,
+      "time_end_sec": 42,
+      "duration_sec": 6,
+      "zoom_technique": "TECH_B_GENERATIVE",
+      "camera_position": "Eixo óptico central, altura aproximada de 1.55m, alinhado com decisão judicial do Supremo Tribunal Federal.",
+      "focal_point": "decisão judicial do Supremo Tribunal Federal",
+      "framing_scale": "Medium Close-Up",
+      "desired_movement": "Avanço físico contínuo no eixo Z, com velocidade constante e sem cortes aparentes.",
+      "spatial_lock": {
+        "parent_segment_id": "SEG_06",
+        "target_roi_norm": [
+          0.5,
+          0.52,
+          0.55,
+          0.55
+        ],
+        "scale_factor": 1.8,
+        "focal_length_mm": 50
+      },
+      "frame_in_ref": "assets/references/brasil-pt-F036-documentos-impeachment.png",
+      "frame_out_ref": "assets/references/brasil-pt-F042-stf-decisao.png",
+      "expected_clip_path": "assets/generated/brasil-pt_SEG_07.mp4",
+      "generation_prompt": "[ASPECT & FORMAT]: Vertical 9:16 (1080x1920), photorealistic live-action documentary cinema footage, ARRI Alexa Mini LF, 50mm prime lens, 6 seconds, 30fps.\n[CONTINUITY ANCHOR]: Continue strictly from assets/references/brasil-pt-F036-documentos-impeachment.png; preserve exact perspective, texture and focal-object position.\n[SCENE & ENVIRONMENT]: Historically grounded Brazilian political documentary scene, realistic Brasília architecture, archive papers, stone, glass and metal, with natural wear. No invented archival lettering.\n[IMMUTABLE SUBJECTS]: Period-appropriate setting, Brazilian national colors used subtly; no fabricated politicians, fake newspaper text or falsely attributed quotes.\n[SUBTLE PHYSICAL ACTION]: Dust moves slowly through natural side light; flag movement is minimal and physically plausible.\n[CAMERA Z-AXIS TRAJECTORY]: Continuous stabilized forward dolly along the Z-axis toward decisão judicial do Supremo Tribunal Federal, centered near [0.50,0.52], no lateral drift.\n[OPTICAL FOCUS & LIGHTING]: Natural key light from upper left at 5000K, restrained contrast, realistic reflections and smooth focus transition onto decisão judicial do Supremo Tribunal Federal.\n[MATERIALS & TEXTURES]: Real paper fibers, fine metal scratches, natural stone pores and restrained uniform 35mm grain.\n[TARGET EXIT FRAME]: End precisely framed on decisão judicial do Supremo Tribunal Federal, matching assets/references/brasil-pt-F042-stf-decisao.png; segment 7 must connect geometrically to the next reference.\n[NEGATIVE CONSTRAINTS]: No camera cuts, no dissolve, no speed ramps, no morphing, no warped architecture, no invented legible text, no fake headlines, no false quotations, no 3D CGI look, no on-screen subtitles.",
+      "continuity_risks": [
+        "O modelo pode distorcer texto documental; usar fontes reais inseridas na pós-produção.",
+        "A transição pode quebrar perspectiva ou alterar arquitetura entre referências."
+      ],
+      "approval_criteria": [
+        "Quadro final alinhado à referência de saída e ao segmento seguinte.",
+        "Nenhum texto falso, citação inventada ou deformação arquitetônica visível."
+      ]
+    },
+    {
+      "segment_id": "SEG_08",
+      "macro_block_id": "B4_30_40",
+      "time_start_sec": 42,
+      "time_end_sec": 48,
+      "duration_sec": 6,
+      "zoom_technique": "TECH_B_GENERATIVE",
+      "camera_position": "Eixo óptico central, altura aproximada de 1.55m, alinhado com relatório de contas públicas sobre mesa de madeira.",
+      "focal_point": "relatório de contas públicas sobre mesa de madeira",
+      "framing_scale": "Close-Up",
+      "desired_movement": "Avanço físico contínuo no eixo Z, com velocidade constante e sem cortes aparentes.",
+      "spatial_lock": {
+        "parent_segment_id": "SEG_07",
+        "target_roi_norm": [
+          0.5,
+          0.52,
+          0.55,
+          0.55
+        ],
+        "scale_factor": 1.8,
+        "focal_length_mm": 85
+      },
+      "frame_in_ref": "assets/references/brasil-pt-F042-stf-decisao.png",
+      "frame_out_ref": "assets/references/brasil-pt-F048-contas-publicas.png",
+      "expected_clip_path": "assets/generated/brasil-pt_SEG_08.mp4",
+      "generation_prompt": "[ASPECT & FORMAT]: Vertical 9:16 (1080x1920), photorealistic live-action documentary cinema footage, ARRI Alexa Mini LF, 85mm prime lens, 6 seconds, 30fps.\n[CONTINUITY ANCHOR]: Continue strictly from assets/references/brasil-pt-F042-stf-decisao.png; preserve exact perspective, texture and focal-object position.\n[SCENE & ENVIRONMENT]: Historically grounded Brazilian political documentary scene, realistic Brasília architecture, archive papers, stone, glass and metal, with natural wear. No invented archival lettering.\n[IMMUTABLE SUBJECTS]: Period-appropriate setting, Brazilian national colors used subtly; no fabricated politicians, fake newspaper text or falsely attributed quotes.\n[SUBTLE PHYSICAL ACTION]: Dust moves slowly through natural side light; flag movement is minimal and physically plausible.\n[CAMERA Z-AXIS TRAJECTORY]: Continuous stabilized forward dolly along the Z-axis toward relatório de contas públicas sobre mesa de madeira, centered near [0.50,0.52], no lateral drift.\n[OPTICAL FOCUS & LIGHTING]: Natural key light from upper left at 5000K, restrained contrast, realistic reflections and smooth focus transition onto relatório de contas públicas sobre mesa de madeira.\n[MATERIALS & TEXTURES]: Real paper fibers, fine metal scratches, natural stone pores and restrained uniform 35mm grain.\n[TARGET EXIT FRAME]: End precisely framed on relatório de contas públicas sobre mesa de madeira, matching assets/references/brasil-pt-F048-contas-publicas.png; segment 8 must connect geometrically to the next reference.\n[NEGATIVE CONSTRAINTS]: No camera cuts, no dissolve, no speed ramps, no morphing, no warped architecture, no invented legible text, no fake headlines, no false quotations, no 3D CGI look, no on-screen subtitles.",
+      "continuity_risks": [
+        "O modelo pode distorcer texto documental; usar fontes reais inseridas na pós-produção.",
+        "A transição pode quebrar perspectiva ou alterar arquitetura entre referências."
+      ],
+      "approval_criteria": [
+        "Quadro final alinhado à referência de saída e ao segmento seguinte.",
+        "Nenhum texto falso, citação inventada ou deformação arquitetônica visível."
+      ]
+    },
+    {
+      "segment_id": "SEG_09",
+      "macro_block_id": "B5_40_50",
+      "time_start_sec": 48,
+      "time_end_sec": 54,
+      "duration_sec": 6,
+      "zoom_technique": "TECH_C_HYBRID",
+      "camera_position": "Eixo óptico central, altura aproximada de 1.55m, alinhado com lente de lupa refletindo Brasília.",
+      "focal_point": "lente de lupa refletindo Brasília",
+      "framing_scale": "Extreme Close-Up",
+      "desired_movement": "Avanço físico contínuo no eixo Z, com velocidade constante e sem cortes aparentes.",
+      "spatial_lock": {
+        "parent_segment_id": "SEG_08",
+        "target_roi_norm": [
+          0.5,
+          0.52,
+          0.55,
+          0.55
+        ],
+        "scale_factor": 1.8,
+        "focal_length_mm": 85
+      },
+      "frame_in_ref": "assets/references/brasil-pt-F048-contas-publicas.png",
+      "frame_out_ref": "assets/references/brasil-pt-F054-lupa-brasilia.png",
+      "expected_clip_path": "assets/generated/brasil-pt_SEG_09.mp4",
+      "generation_prompt": "[ASPECT & FORMAT]: Vertical 9:16 (1080x1920), photorealistic live-action documentary cinema footage, ARRI Alexa Mini LF, 85mm prime lens, 6 seconds, 30fps.\n[CONTINUITY ANCHOR]: Continue strictly from assets/references/brasil-pt-F048-contas-publicas.png; preserve exact perspective, texture and focal-object position.\n[SCENE & ENVIRONMENT]: Historically grounded Brazilian political documentary scene, realistic Brasília architecture, archive papers, stone, glass and metal, with natural wear. No invented archival lettering.\n[IMMUTABLE SUBJECTS]: Period-appropriate setting, Brazilian national colors used subtly; no fabricated politicians, fake newspaper text or falsely attributed quotes.\n[SUBTLE PHYSICAL ACTION]: Dust moves slowly through natural side light; flag movement is minimal and physically plausible.\n[CAMERA Z-AXIS TRAJECTORY]: Continuous stabilized forward dolly along the Z-axis toward lente de lupa refletindo Brasília, centered near [0.50,0.52], no lateral drift.\n[OPTICAL FOCUS & LIGHTING]: Natural key light from upper left at 5000K, restrained contrast, realistic reflections and smooth focus transition onto lente de lupa refletindo Brasília.\n[MATERIALS & TEXTURES]: Real paper fibers, fine metal scratches, natural stone pores and restrained uniform 35mm grain.\n[TARGET EXIT FRAME]: End precisely framed on lente de lupa refletindo Brasília, matching assets/references/brasil-pt-F054-lupa-brasilia.png; segment 9 must connect geometrically to the next reference.\n[NEGATIVE CONSTRAINTS]: No camera cuts, no dissolve, no speed ramps, no morphing, no warped architecture, no invented legible text, no fake headlines, no false quotations, no 3D CGI look, no on-screen subtitles.",
+      "continuity_risks": [
+        "O modelo pode distorcer texto documental; usar fontes reais inseridas na pós-produção.",
+        "A transição pode quebrar perspectiva ou alterar arquitetura entre referências."
+      ],
+      "approval_criteria": [
+        "Quadro final alinhado à referência de saída e ao segmento seguinte.",
+        "Nenhum texto falso, citação inventada ou deformação arquitetônica visível."
+      ]
+    },
+    {
+      "segment_id": "SEG_10",
+      "macro_block_id": "B5_40_50",
+      "time_start_sec": 54,
+      "time_end_sec": 60,
+      "duration_sec": 6,
+      "zoom_technique": "TECH_B_GENERATIVE",
+      "camera_position": "Eixo óptico central, altura aproximada de 1.55m, alinhado com reflexo exato do plano geral inicial de Brasília.",
+      "focal_point": "reflexo exato do plano geral inicial de Brasília",
+      "framing_scale": "Wide Shot",
+      "desired_movement": "Avanço físico contínuo no eixo Z, com velocidade constante e sem cortes aparentes.",
+      "spatial_lock": {
+        "parent_segment_id": "SEG_09",
+        "target_roi_norm": [
+          0.5,
+          0.52,
+          0.8,
+          0.8
+        ],
+        "scale_factor": 1.25,
+        "focal_length_mm": 85
+      },
+      "frame_in_ref": "assets/references/brasil-pt-F054-lupa-brasilia.png",
+      "frame_out_ref": "assets/references/brasil-pt-F000-master-4k.png",
+      "expected_clip_path": "assets/generated/brasil-pt_SEG_10.mp4",
+      "generation_prompt": "[ASPECT & FORMAT]: Vertical 9:16 (1080x1920), photorealistic live-action documentary cinema footage, ARRI Alexa Mini LF, 85mm prime lens, 6 seconds, 30fps.\n[CONTINUITY ANCHOR]: Continue strictly from assets/references/brasil-pt-F054-lupa-brasilia.png; preserve exact perspective, texture and focal-object position.\n[SCENE & ENVIRONMENT]: Historically grounded Brazilian political documentary scene, realistic Brasília architecture, archive papers, stone, glass and metal, with natural wear. No invented archival lettering.\n[IMMUTABLE SUBJECTS]: Period-appropriate setting, Brazilian national colors used subtly; no fabricated politicians, fake newspaper text or falsely attributed quotes.\n[SUBTLE PHYSICAL ACTION]: Dust moves slowly through natural side light; flag movement is minimal and physically plausible.\n[CAMERA Z-AXIS TRAJECTORY]: Continuous stabilized forward dolly along the Z-axis toward reflexo exato do plano geral inicial de Brasília, centered near [0.50,0.52], no lateral drift.\n[OPTICAL FOCUS & LIGHTING]: Natural key light from upper left at 5000K, restrained contrast, realistic reflections and smooth focus transition onto reflexo exato do plano geral inicial de Brasília.\n[MATERIALS & TEXTURES]: Real paper fibers, fine metal scratches, natural stone pores and restrained uniform 35mm grain.\n[TARGET EXIT FRAME]: End precisely framed on reflexo exato do plano geral inicial de Brasília, matching assets/references/brasil-pt-F000-master-4k.png; segment 10 must connect geometrically to the next reference; composite the reflection to match F_000 exactly.\n[NEGATIVE CONSTRAINTS]: No camera cuts, no dissolve, no speed ramps, no morphing, no warped architecture, no invented legible text, no fake headlines, no false quotations, no 3D CGI look, no on-screen subtitles.",
+      "continuity_risks": [
+        "O modelo pode distorcer texto documental; usar fontes reais inseridas na pós-produção.",
+        "A transição pode quebrar perspectiva ou alterar arquitetura entre referências."
+      ],
+      "approval_criteria": [
+        "Quadro final alinhado à referência de saída e ao segmento seguinte.",
+        "Nenhum texto falso, citação inventada ou deformação arquitetônica visível."
+      ]
+    }
+  ],
+  "audio_and_subtitles": {
+    "narration_audio_local_path": "assets/audio/brasil-ciclo-pt-custos-e-controversias_narration.wav",
+    "ambience_audio_local_path": "assets/audio/brasil-ciclo-pt-custos-e-controversias_ambience.wav",
+    "subtitles_local_path": "assets/subtitles/brasil-ciclo-pt-custos-e-controversias.srt",
+    "total_word_count": 149,
+    "estimated_total_speech_sec": 64.8,
+    "voice_profile": {
+      "language": "pt-BR",
+      "timbre": "Masculino grave, maduro, investigativo e contido",
+      "speaking_rate": 1,
+      "target_lufs": -14
+    },
+    "subtitle_blocks": [
+      {
+        "index": 1,
+        "start": "00:00:00,300",
+        "end": "00:00:03,500",
+        "text": "Em 2003, o PT chegou ao\nPlanalto prometendo ética,"
+      },
+      {
+        "index": 2,
+        "start": "00:00:03,580",
+        "end": "00:00:06,780",
+        "text": "inclusão e crescimento."
+      },
+      {
+        "index": 3,
+        "start": "00:00:06,860",
+        "end": "00:00:09,700",
+        "text": "Mas os anos seguintes também\ntrouxeram alertas sobre"
+      },
+      {
+        "index": 4,
+        "start": "00:00:10,140",
+        "end": "00:00:09,700",
+        "text": "poder e responsabilidade."
+      },
+      {
+        "index": 5,
+        "start": "00:00:10,300",
+        "end": "00:00:13,100",
+        "text": "Em 2005, o Mensalão abalou o\ngoverno."
+      },
+      {
+        "index": 6,
+        "start": "00:00:13,180",
+        "end": "00:00:16,380",
+        "text": "O Supremo condenou figuras\ncentrais, transformando a"
+      },
+      {
+        "index": 7,
+        "start": "00:00:16,460",
+        "end": "00:00:19,660",
+        "text": "promessa de renovação\npolítica numa grave crise de"
+      },
+      {
+        "index": 8,
+        "start": "00:00:19,740",
+        "end": "00:00:19,700",
+        "text": "credibilidade."
+      },
+      {
+        "index": 9,
+        "start": "00:00:20,300",
+        "end": "00:00:23,500",
+        "text": "Depois, a Lava Jato revelou\npropinas em contratos da"
+      },
+      {
+        "index": 10,
+        "start": "00:00:23,580",
+        "end": "00:00:26,780",
+        "text": "Petrobras e empreiteiras."
+      },
+      {
+        "index": 11,
+        "start": "00:00:26,860",
+        "end": "00:00:29,700",
+        "text": "A investigação atingiu\npolíticos de vários partidos"
+      },
+      {
+        "index": 12,
+        "start": "00:00:30,140",
+        "end": "00:00:29,700",
+        "text": "e expôs falhas graves de\nfiscalização."
+      },
+      {
+        "index": 13,
+        "start": "00:00:30,300",
+        "end": "00:00:33,500",
+        "text": "Em 2015 e 2016, o PIB\nbrasileiro caiu nos dois"
+      },
+      {
+        "index": 14,
+        "start": "00:00:33,580",
+        "end": "00:00:36,780",
+        "text": "anos."
+      },
+      {
+        "index": 15,
+        "start": "00:00:36,860",
+        "end": "00:00:39,700",
+        "text": "Consumo e investimento\nrecuaram; escolhas"
+      },
+      {
+        "index": 16,
+        "start": "00:00:40,140",
+        "end": "00:00:39,700",
+        "text": "econômicas do período\ncontribuíram para uma crise"
+      },
+      {
+        "index": 17,
+        "start": "00:00:43,420",
+        "end": "00:00:39,700",
+        "text": "profunda."
+      },
+      {
+        "index": 18,
+        "start": "00:00:40,300",
+        "end": "00:00:43,500",
+        "text": "Dilma sofreu impeachment em\n2016 por questões"
+      },
+      {
+        "index": 19,
+        "start": "00:00:43,580",
+        "end": "00:00:46,780",
+        "text": "orçamentárias."
+      },
+      {
+        "index": 20,
+        "start": "00:00:46,860",
+        "end": "00:00:49,700",
+        "text": "Em 2021, o STF anulou\ncondenações de Lula por"
+      },
+      {
+        "index": 21,
+        "start": "00:00:50,140",
+        "end": "00:00:49,700",
+        "text": "incompetência da vara de\nCuritiba, não por absolvição"
+      },
+      {
+        "index": 22,
+        "start": "00:00:53,420",
+        "end": "00:00:49,700",
+        "text": "de mérito."
+      },
+      {
+        "index": 23,
+        "start": "00:00:50,300",
+        "end": "00:00:53,500",
+        "text": "A crítica ao ciclo petista é\nesta: promessas não"
+      },
+      {
+        "index": 24,
+        "start": "00:00:53,580",
+        "end": "00:00:56,780",
+        "text": "substituem transparência,\nresponsabilidade fiscal e"
+      },
+      {
+        "index": 25,
+        "start": "00:00:56,860",
+        "end": "00:00:59,700",
+        "text": "prestação de contas."
+      },
+      {
+        "index": 26,
+        "start": "00:01:00,140",
+        "end": "00:00:59,700",
+        "text": "Governos devem responder\npelos resultados — e a"
+      },
+      {
+        "index": 27,
+        "start": "00:01:03,420",
+        "end": "00:00:59,700",
+        "text": "cobrança recomeça."
+      }
+    ]
+  },
+  "sources": [
+    {
+      "claim": "PIB brasileiro em queda em 2015",
+      "url": "https://agenciadenoticias.ibge.gov.br/agencia-sala-de-imprensa/2013-agencia-de-noticias/releases/17902-pib-cai-3-5-em-2015-e-registra-r-6-trilhoes"
+    },
+    {
+      "claim": "Dados consolidados do PIB de 2016",
+      "url": "https://agenciadenoticias.ibge.gov.br/agencia-sala-de-imprensa/2013-agencia-de-noticias/releases/22936-em-2016-pib-chega-a-r-6-3-trilhoes-e-cai-3-3-em-volume"
+    },
+    {
+      "claim": "STF confirma anulação das condenações de Lula por incompetência da vara",
+      "url": "https://portal.stf.jus.br/noticias/verNoticiaDetalhe.asp?idConteudo=464261"
+    },
+    {
+      "claim": "Decisão do STF de março de 2021",
+      "url": "https://portal.stf.jus.br/noticias/verNoticiaDetalhe.asp?idConteudo=461870"
+    }
+  ]
+}
